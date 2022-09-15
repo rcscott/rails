@@ -450,6 +450,8 @@ If you are using multiple databases, `bin/rails dbconsole` will connect to the p
 $ bin/rails dbconsole --database=animals
 ```
 
+You can use the `--include-password` option to automatically provide the password from `database.yml`. Note that this option should not be used on shared hosts where it's possible for other users to see the password in your process list.
+
 ### `bin/rails runner`
 
 `runner` runs Ruby code in the context of Rails non-interactively. For instance:
